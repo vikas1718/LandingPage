@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BrandX - Modern Responsive Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Sticky Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-primary" href="#">BrandX</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
+        <li class="nav-item"><a href="#stats" class="nav-link">Stats</a></li>
+        <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+        <li class="nav-item"><button class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section" id="home">
+  <div class="container text-center">
+    <h1 class="display-4 mb-3">Grow Your Business.<br>Inspire the World.</h1>
+    <p class="lead mb-4">Delivering innovative solutions with modern design &amp; seamless functionality.</p>
+    <a href="#features" class="btn btn-lg btn-light me-2 shadow fw-bold">Explore Features</a>
+    <a href="#contactModal" data-bs-toggle="modal" class="btn btn-lg btn-outline-light fw-bold">Contact Us</a>
+  </div>
+</section>
+
+<!-- Section Divider -->
+<div class="section-divider"></div>
+
+<!-- Features Section -->
+<section id="features" class="container py-5 fade-section">
+  <h2 class="text-center text-primary mb-1">Powerful Features</h2>
+  <div class="section-divider mb-4"></div>
+  <div class="row g-4">
+    <div class="col-md-4 text-center">
+      <div class="p-4 bg-white rounded border h-100">
+        <i class="bi bi-lightning-charge-fill feature-icon"></i>
+        <h4 class="fw-bold mb-2">Lightning Fast</h4>
+        <p>Built with the latest technologies for blazing performance in all conditions.</p>
+      </div>
+    </div>
+    <div class="col-md-4 text-center">
+      <div class="p-4 bg-white rounded border h-100">
+        <i class="bi bi-shield-lock-fill feature-icon"></i>
+        <h4 class="fw-bold mb-2">Secure &amp; Reliable</h4>
+        <p>Advanced security protocols and reliable uptime keep your data safe.</p>
+      </div>
+    </div>
+    <div class="col-md-4 text-center">
+      <div class="p-4 bg-white rounded border h-100">
+        <i class="bi bi-headset feature-icon"></i>
+        <h4 class="fw-bold mb-2">24/7 Support</h4>
+        <p>Dedicated support team ready to assist you anytime.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section Divider -->
+<div class="section-divider"></div>
+
+<!-- Team Section -->
+<section id="team" class="container py-5 fade-section">
+  <h2 class="text-center text-primary mb-1">Meet Our Team</h2>
+  <div class="section-divider mb-4"></div>
+  <div class="row g-4 justify-content-center">
+    <div class="col-md-3 col-6 text-center">
+      <div class="team-card p-3 bg-white rounded shadow-sm">
+        <img src="https://randomuser.me/api/portraits/men/90.jpg" alt="team1">
+        <h5 class="mt-2 mb-0">Amit Verma</h5>
+        <small class="text-muted">Founder &amp; CEO</small>
+      </div>
+    </div>
+    <div class="col-md-3 col-6 text-center">
+      <div class="team-card p-3 bg-white rounded shadow-sm">
+        <img src="https://randomuser.me/api/portraits/women/69.jpg" alt="team2">
+        <h5 class="mt-2 mb-0">Megha Rao</h5>
+        <small class="text-muted">Product Lead</small>
+      </div>
+    </div>
+    <div class="col-md-3 col-6 text-center">
+      <div class="team-card p-3 bg-white rounded shadow-sm">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="team3">
+        <h5 class="mt-2 mb-0">Rajesh Kumar</h5>
+        <small class="text-muted">Tech Lead</small>
+      </div>
+    </div>
+    <div class="col-md-3 col-6 text-center">
+      <div class="team-card p-3 bg-white rounded shadow-sm">
+        <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="team4">
+        <h5 class="mt-2 mb-0">Priya Singh</h5>
+        <small class="text-muted">Designer</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section Divider -->
+<div class="section-divider"></div>
+
+<!-- Stats Section -->
+<section id="stats" class="container py-5 fade-section">
+  <h2 class="text-center text-primary mb-1">Our Achievements</h2>
+  <div class="section-divider mb-4"></div>
+  <div class="row text-center gy-4">
+    <div class="col-6 col-md-3">
+      <div class="counter" data-target="1200">0</div>
+      <div class="counter-label">Happy Clients</div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="counter" data-target="99">0</div>
+      <div class="counter-label">Satisfaction (%)</div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="counter" data-target="245">0</div>
+      <div class="counter-label">Projects</div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="counter" data-target="12">0</div>
+      <div class="counter-label">Awards</div>
+    </div>
+  </div>
+</section>
+
+<!-- Section Divider -->
+<div class="section-divider"></div>
+
+<!-- Blog Section -->
+<section id="blog" class="container py-5 fade-section">
+  <h2 class="text-center text-primary mb-1">Latest Blog</h2>
+  <div class="section-divider mb-4"></div>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card blog-card h-100">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Top UI/UX Trends in 2025</h5>
+          <p class="card-text">Discover the leading design patterns making brands stand out this year.</p>
+          <a href="#" class="btn btn-link text-primary">Read more <i class="bi bi-arrow-right-circle-fill"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card blog-card h-100">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">How We Improved Our Support</h5>
+          <p class="card-text">Our strategies for delighting customers and building loyalty.</p>
+          <a href="#" class="btn btn-link text-primary">Read more <i class="bi bi-arrow-right-circle-fill"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card blog-card h-100">
+        <img src="https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Faster Web Experiences: A How-To</h5>
+          <p class="card-text">Tips to speed up your site’s performance and wow users.</p>
+          <a href="#" class="btn btn-link text-primary">Read more <i class="bi bi-arrow-right-circle-fill"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section Divider -->
+<div class="section-divider"></div>
+
+<!-- Testimonials Section -->
+<section class="container py-5 fade-section" id="testimonials">
+  <h2 class="text-center text-primary mb-1">What Our Clients Say</h2>
+  <div class="section-divider mb-4"></div>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card testimonial-card p-3 h-100">
+        <div class="d-flex align-items-center mb-3">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="user" class="rounded-circle me-3" width="60" height="60">
+          <div>
+            <h6 class="mb-0">Divya S.</h6>
+            <small class="text-muted">Entrepreneur</small>
+          </div>
+        </div>
+        <div class="card-body p-0">
+          <p>"BrandX helped my business stand out online. The process was smooth, and the results exceeded my expectations."</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card testimonial-card p-3 h-100">
+        <div class="d-flex align-items-center mb-3">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user" class="rounded-circle me-3" width="60" height="60">
+          <div>
+            <h6 class="mb-0">Arjun P.</h6>
+            <small class="text-muted">Startup Founder</small>
+          </div>
+        </div>
+        <div class="card-body p-0">
+          <p>"Their design sense and support impressed us. Will recommend BrandX to everyone in my network!"</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card testimonial-card p-3 h-100">
+        <div class="d-flex align-items-center mb-3">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="user" class="rounded-circle me-3" width="60" height="60">
+          <div>
+            <h6 class="mb-0">Neha R.</h6>
+            <small class="text-muted">Freelancer</small>
+          </div>
+        </div>
+        <div class="card-body p-0">
+          <p>"Superb experience! Their support team always resolves queries in no time."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section Divider -->
+<div class="section-divider"></div>
+
+<!-- FAQ Section (Accordion) -->
+<section class="container py-5 fade-section" id="faq">
+  <h2 class="text-center text-primary mb-1">Frequently Asked Questions</h2>
+  <div class="section-divider mb-4"></div>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+          What is BrandX known for?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          BrandX specializes in creating high-quality, user-centric digital products and services for businesses of all sizes.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          How can I get in touch with you?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Click the Contact button or the chat bubble. We reply within 24 hours!
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+          Can you customize solutions for my needs?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Absolutely! We tailor our services according to your requirements for the perfect solution.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title w-100 text-center" id="contactModalLabel">Contact Us</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <form>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="contactName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="contactName" required>
+          </div>
+          <div class="mb-3">
+            <label for="contactEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="contactEmail" required>
+          </div>
+          <div class="mb-3">
+            <label for="contactMessage" class="form-label">Message</label>
+            <textarea class="form-control" id="contactMessage" rows="3" required></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-bs-dismiss="modal" class="btn btn-secondary">Cancel</button>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Floating Chat Button -->
+<button class="chat-btn" title="Chat with us" data-bs-toggle="modal" data-bs-target="#contactModal">
+  <i class="bi bi-chat-dots"></i>
+</button>
+
+<!-- Footer -->
+<footer class="footer py-4">
+  <div class="container text-center">
+    <div class="mb-2">
+      <a href="#">Privacy Policy</a>|
+      <a href="#">Terms of Service</a>|
+      <a href="#">LinkedIn</a>
+    </div>
+    <small>&copy; 2025 BrandX. Crafted in India with passion.</small>
+  </div>
+</footer>
+
+<!-- Scroll-to-top Button -->
+<button id="scrollTopBtn" class="scroll-top-btn" title="Back to top"><i class="bi bi-chevron-up"></i></button>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
